@@ -1,0 +1,102 @@
+.container{
+    /* parent properties */ 
+    height: 400px;
+    display: flex;
+
+    /* children properties */
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: start;
+}
+
+.item{
+    border-radius: 15px;
+    border-style: solid;
+    border-width: thin;
+    border-color: black;
+    width: 25%;
+}
+
+.box2{
+    width: 50%;
+}
+
+.box5{
+    width: 75%;
+}
+
+.item.box5{
+    /*parent properties*/
+    display: flex;
+
+    /*children properties*/
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: flex-start;
+
+}
+
+.div{
+    height: 20%;
+    border-radius: 15px;
+    border-style: solid;
+    border-width: thin;
+    border-color: azure;
+}
+
+.first{
+    background-color: rgb(255, 235, 205);
+}
+
+.second{
+    background-color: rgb(203, 203, 243);
+}
+
+.third{
+    background-color: rgb(160, 160, 236);
+}
+
+.fourth{
+    background-color: rgb(123, 123, 238);
+}
+
+.fifth{
+    background-color: rgb(86, 86, 236);
+}
+
+
+.heading{
+    text-align: center;
+    font-style: italic;
+}
+
+h1.heading{
+    font-style: oblique;
+}
+
+.subheading{
+    text-align: center;
+    font-style: italic;
+    color: green;
+}
+
+.paragraph{
+    font-size: 14px;
+    font-family: sans-serif;
+}
+
+.par{
+    font-size: 18px;
+    font-family: sans-serif;
+}
+
+.footer{
+    background-color: rgb(1, 1, 14);
+    height: 160px;
+    border-radius: 15px;
+}
+
+.foot{
+    color: white;
+    text-align: center;
+}
