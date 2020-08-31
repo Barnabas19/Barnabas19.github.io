@@ -125,6 +125,7 @@ h1.heading{
     background-color: rgb(86, 86, 236);
     height: 130px;
     border-radius: 15px;
+    color: white;
 }
 
 .link{
@@ -134,6 +135,7 @@ h1.heading{
 .trending{
     background-color:  rgb(123, 123, 247);
     border-radius: 20px;
+    padding: 60px;
 }
 
 .one{
