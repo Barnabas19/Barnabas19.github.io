@@ -1,3 +1,7 @@
+*{
+    box-sizing: border-box;
+}
+
 .container{
     /* parent properties */ 
     height: 400px;
@@ -15,6 +19,7 @@
     border-width: thin;
     border-color: black;
     width: 25%;
+    padding: 6px;
 }
 
 .box2{
@@ -42,6 +47,7 @@
     border-style: solid;
     border-width: thin;
     border-color: azure;
+    padding: 6px;
 }
 
 .first{
@@ -90,6 +96,10 @@ h1.heading{
     font-family: sans-serif;
 }
 
+.image{
+    width: 100%;
+}
+
 .footer{
     background-color: rgb(1, 1, 14);
     height: 160px;
@@ -115,4 +125,21 @@ h1.heading{
     background-color: rgb(86, 86, 236);
     height: 130px;
     border-radius: 15px;
+}
+
+.link{
+    font-family: sans-serif;
+}
+
+.trending{
+    background-color:  rgb(123, 123, 247);
+    border-radius: 20px;
+}
+
+.one{
+    background-color: rgb(67, 67, 243);
+    color: white;
+    padding: 50px;
+    margin: 0 200px 0 200px;
+    border-radius: 20px;
 }
