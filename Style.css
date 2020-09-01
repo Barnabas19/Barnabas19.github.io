@@ -135,13 +135,13 @@ h1.heading{
 .trending{
     background-color:  rgb(123, 123, 247);
     border-radius: 20px;
-    padding: 60px;
+    padding: 10px;
 }
 
 .one{
     background-color: rgb(67, 67, 243);
     color: white;
-    padding: 50px;
-    margin: 0 200px 0 200px;
+    padding: 10px;
+    margin: 0 10px 0 10px;
     border-radius: 20px;
 }
