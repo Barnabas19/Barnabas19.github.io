@@ -1,0 +1,136 @@
+*{
+    box-sizing: border-box;
+}
+
+.division{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div{
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+
+.preload{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(248, 216, 35);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 15s ease;
+}
+
+.preload-finish{
+    opacity: 0;
+    pointer-events: none;
+}
+
+.photo1, .photo2, .photo3{
+    position: absolute;
+}
+
+.photo1{
+    top: 1%;
+    right: 0px;
+    height: 400px;
+    animation: photo1 1s ease infinite alternate;
+}
+
+.photo2{
+    top: 35%;
+    height: 200px;
+    animation: photo2 1s ease infinite alternate;
+}
+
+.photo3{
+    top: 50%;
+    left: 0px;
+    height: 100px;
+    animation: photo3 1s ease infinite alternate;
+}
+
+@keyframes photo1{
+    from{
+        transform: translateY(0px);
+    }
+    to{
+        transform: translateY(50px);
+    }
+}
+
+@keyframes photo2{
+    from{
+        transform: translateX(0px);
+    }
+    to{
+        transform: translateX(-100px);
+    }
+}
+
+@keyframes photo3{
+    from{
+        transform: translateX(0px);
+    }
+    to{
+        transform: translateY(-50px);
+    }
+}
+
+.head{
+    color: chocolate;
+    position: absolute;
+    top: 3%;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-variant: small-caps;
+    text-shadow: 5px 2px 3px rgb(240, 153, 91);
+}
+
+.heading{
+    text-align: center;
+    color: chocolate;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-variant: small-caps;
+    text-shadow: 5px 2px 3px rgb(240, 153, 91);
+}
+
+.button{
+    width: 400px;
+    height: 60px;
+    background-color: rgb(211, 139, 87);
+    color: white;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 17px;
+    font-weight: 480;
+    letter-spacing: -1px;
+    word-spacing: 6px;
+    text-align: center;
+    border-radius: 17px;
+    border: none;
+    outline: none;
+    text-shadow: 5px 2px 6px rgb(168, 168, 166);
+}
+
+.paragraph{
+    color: #2e2e2e;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 17px;
+    font-weight: 100;
+    letter-spacing: 0.5px;
+    text-align: center;
+    text-shadow: 5px 2px 6px rgb(209, 209, 207);
+}
