@@ -1,6 +1,13 @@
+/*
+require express.js and path.js and node-fetch.js 
+from environment 
+*/
 const express = require("express");
 const path = require("path");
+const fetch = require("node-fetch");
 
+
+//photo url data structure 
 const photo = [
   "https://images.dog.ceo/breeds/briard/n02105251_7654.jpg",
   "https://images.dog.ceo/breeds/hound-basset/n02088238_10592.jpg",
@@ -18,15 +25,18 @@ function getRandomPhoto() {
   return photo[randomIndex];
 }
 
+
 //creating a server
 const app = express();
 
 //creating routes on server
+//route 1
 app.get("/", function(req, res) {
   res.sendFile(path.join(__dirname, "Applique.html"));
   console.log(`User entered home page: http://localhost:3000${req.url}`);
 });
 
+//route 2
 app.get("/photo", function(req, res) {
   res
     .json({
