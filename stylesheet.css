@@ -1,0 +1,157 @@
+/* BORDER-BOX DECLARATION */
+html,
+*,
+*:before,
+*:after{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+
+body{
+    padding-top: 200px;
+}
+
+/* MOBILE FIRST */
+.page-header{
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    color: rgb(255, 102, 0);
+    background: black;
+}
+.heading,
+.subheading{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 15px;
+    margin-top: 5px;
+}
+.navigation{
+    width: 95%;
+    margin: 0 2.5% 10px 2.5%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: stretch;
+    justify-content: space-between;
+}
+.link{
+    flex: 0 0 50%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.container{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: stretch;
+}
+.image{
+    width: 100%;
+    height: 350px;
+}
+.item{
+    padding: 5px;
+}
+.box1,
+.box2,
+.box3,
+.box4,
+.box5{
+    flex: 0 0 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 10px;
+    border: 1px solid  rgb(255, 102, 0);
+    border-radius: 6px;
+    text-align: center;
+}
+.box5{
+    padding: 0;
+}
+.div{
+    height: 50px;
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 6px;
+}
+.trending-one{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: stretch;
+}
+.trending-one .section{
+    flex: 0 0 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    border: 1px solid  rgb(255, 102, 0);
+    text-align: center;
+    margin-bottom: 80px;
+    border-radius: 6px;
+}
+.trending-one img{
+    height: 250px;
+}
+.footer{
+    width: 100%;
+    font-size: 14px;
+    background-color: black;
+    color: teal;
+}
+.foot-heading{
+    width: 100%;
+    text-align: center;
+}
+.foot-paragraph{
+    width: 100%;
+    text-align: center;
+}
+
+/* DESKTOP */
+@media only screen and (min-width: 780px){
+    .box1{
+        flex: 0 0 25%;
+    }
+    .box2{
+        flex: 0 0 50%;
+    }
+    .box3{
+        flex: 0 0 25%;
+    }
+    .box4{
+        flex: 0 0 25%;
+    }
+    .box5{
+        flex: 0 0 75%;
+    }
+    .item{
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 0;
+    }
+    .div{
+        height: 20%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .link{
+        flex: 0 0 15%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .trending-one .section{
+        flex: 0 0 44%;
+        border: 1px solid  rgb(255, 102, 0);
+        text-align: center;
+        margin-left: 4%;
+        margin-right: 0;
+        margin-bottom: 60px;
+        border-radius: 6px;
+        padding: 10px;
+    }
+}
